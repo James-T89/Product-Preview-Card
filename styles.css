@@ -1,0 +1,77 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  height: calc(100vh - 1px);
+  place-items: center;
+  display: grid;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--Cream);
+
+}
+
+.card {
+  width: 375px;
+  border-radius: 10px;
+  background-color: var(--White);
+  color: var(--Dark-grayish-blue);
+}
+
+.padding {
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+}
+
+img {
+  border-radius: 10px 10px 0 0;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.product-type {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+h1 {
+  color: var(--Very-dark-blue);
+}
+
+h1, .sale-price {
+  font-family: 'Fraunces', serif;
+}
+
+.prices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.sale-price {
+  color: var(--Dark-cyan);
+  font-weight: 700;
+}
+
+.original-price {
+  text-decoration: line-through;
+}
+
+.button {
+  margin: 1.5rem;
+  width: 300px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  color: var(--White);
+  background-color: var(--Dark-cyan);
+}
