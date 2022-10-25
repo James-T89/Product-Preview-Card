@@ -11,25 +11,25 @@
 }
 
 body {
-  margin: 0;
-  height: calc(100vh - 1px);
-  place-items: center;
+  height: calc(100vh - 3rem);
+  margin: 1.5rem 1rem;
   display: grid;
+  place-items: center;
   font-family: 'Montserrat', sans-serif;
   background-color: var(--Cream);
 
 }
 
 .card {
-  width: 375px;
+  position: relative;
+  width: 330px;
   border-radius: 10px;
   background-color: var(--White);
   color: var(--Dark-grayish-blue);
 }
 
 .padding {
-  padding-inline-start: 1rem;
-  padding-inline-end: 1rem;
+  padding: 0 1.25rem;
 }
 
 img {
@@ -41,37 +41,65 @@ img {
 .product-type {
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  margin-block-end: .25rem;
 }
 
 h1 {
   color: var(--Very-dark-blue);
+  margin: 0;
 }
 
 h1, .sale-price {
   font-family: 'Fraunces', serif;
 }
 
+p {
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
 .prices {
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
 }
 
 
 .sale-price {
   color: var(--Dark-cyan);
+  font-size: 35px;
   font-weight: 700;
 }
 
 .original-price {
   text-decoration: line-through;
+  padding-inline-start: 1rem;
 }
 
 .button {
-  margin: 1.5rem;
-  width: 300px;
+  position: relative;
+  font-size: 14px;
+  padding: 1rem 0;
+  width: calc(100% - 2.5rem);
+  margin: 1.25rem;
   font-weight: 700;
   border-radius: 5px;
   border: none;
   color: var(--White);
   background-color: var(--Dark-cyan);
+}
+
+.button:hover {
+  background-color: hsl(158, 67%, 12%);
+  cursor: pointer;
+}
+
+.btn-text {
+  padding-inline-start: .5rem;
+}
+
+svg {
+  position: absolute;
+  top: 31%;
+  left: 30%;
 }
