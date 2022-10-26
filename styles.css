@@ -28,6 +28,42 @@ body {
   color: var(--Dark-grayish-blue);
 }
 
+/* finish media query */
+@media (orientation: landscape) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 660px;
+    height: 495px;
+  }
+
+  .desktop-img {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .info-wrapper {
+    display: grid;
+    align-items: center;
+    margin: .25rem 1rem;
+  }
+  
+  .product-name {
+    font-size: 34px;
+    line-height: 1;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .icon {
+    top: 32.5%;
+    left: 27%;  
+  }
+
+}
+
 .padding {
   padding: 0 1.25rem;
 }
