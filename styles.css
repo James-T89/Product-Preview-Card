@@ -10,6 +10,7 @@
 --White: hsl(0, 0%, 100%);
 }
 
+
 body {
   height: calc(100vh - 3rem);
   margin: 1.5rem 1rem;
@@ -28,7 +29,6 @@ body {
   color: var(--Dark-grayish-blue);
 }
 
-/* finish media query */
 @media (orientation: landscape) {
   .card {
     display: grid;
@@ -48,12 +48,12 @@ body {
   }
   
   .product-name {
-    font-size: 34px;
+    font-size: 2.125rem;
     line-height: 1;
   }
 
   .description {
-    font-size: 15px;
+    font-size: 0.938rem;
     line-height: 1.75;
   }
 
@@ -90,7 +90,7 @@ h1, .sale-price {
 }
 
 p {
-  font-size: 13.5px;
+  font-size: 0.844rem;
   line-height: 1.5;
 }
 
@@ -103,18 +103,26 @@ p {
 
 .sale-price {
   color: var(--Dark-cyan);
-  font-size: 35px;
+  font-size: 2.188rem;
   font-weight: 700;
 }
 
 .original-price {
-  text-decoration: line-through;
   padding-inline-start: 1rem;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
 }
 
 .button {
   position: relative;
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: 1rem 0;
   width: calc(100% - 2.5rem);
   margin: 1.25rem;
